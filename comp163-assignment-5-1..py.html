@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>comp163-assignment-5-1..py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #2aacb8;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+comp163-assignment-5-1..py</font>
+</center></td></tr></table>
+<pre><span class="s0">print</span><span class="s1">(</span><span class="s2">&quot;=== Challenge 1: Collatz Conjecture ===&quot;</span><span class="s1">)</span>
+
+<span class="s0">current_number </span><span class="s1">= </span><span class="s0">int</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">&quot;Enter starting number: &quot;</span><span class="s1">))</span>
+<span class="s0">step_count </span><span class="s1">= </span><span class="s3">0</span>
+
+<span class="s0">print</span><span class="s1">(</span><span class="s2">&quot;Sequence:&quot;</span><span class="s1">, </span><span class="s0">end</span><span class="s1">= </span><span class="s2">&quot; &quot;</span><span class="s1">)</span>
+<span class="s4">while </span><span class="s0">current_number </span><span class="s1">!= </span><span class="s3">1</span><span class="s1">: </span><span class="s5">#this keeps looping until the condition is true</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s0">current_number</span><span class="s1">, </span><span class="s0">end</span><span class="s1">= </span><span class="s2">&quot; &quot;</span><span class="s1">)</span>
+    <span class="s0">step_count </span><span class="s1">+=</span><span class="s3">1</span>
+
+    <span class="s4">if </span><span class="s0">current_number </span><span class="s1">% </span><span class="s3">2 </span><span class="s1">== </span><span class="s3">0</span><span class="s1">:</span>
+        <span class="s0">current_number </span><span class="s1">= </span><span class="s0">current_number </span><span class="s1">// </span><span class="s3">2</span>
+    <span class="s4">else</span><span class="s1">:</span>
+        <span class="s0">current_number </span><span class="s1">= </span><span class="s0">current_number </span><span class="s1">* </span><span class="s3">3 </span><span class="s1">+ </span><span class="s3">1</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s0">current_number</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">&quot;Steps:&quot;</span><span class="s1">, </span><span class="s0">step_count</span><span class="s1">)</span></pre>
+</body>
+</html>
